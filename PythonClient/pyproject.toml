@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "airsim"
+version = "1.8.1"
+description = "Open source simulator based on Unreal Engine for autonomous vehicles from Microsoft AI & Research"  # :contentReference[oaicite:17]{index=17}
+authors = [
+  { name = "Shital Shah", email = "shitals@microsoft.com" }
+]
+requires-python = ">=3.5"
+dependencies = [
+  "backports-ssl-match-hostname>=3.7.0.1",
+  "msgpack-rpc-python",
+  "numpy",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
